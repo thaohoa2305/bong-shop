@@ -94,13 +94,13 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
     const cleanInput = emailOrUsername.trim().toLowerCase();
 
     // 🔒 1. DEDICATED MASTER ADMIN ACCOUNT CHECK
-    if ((cleanInput === 'admin' || cleanInput === 'admin@minishop.com') && pass === 'admin') {
+    if ((cleanInput === 'admin' || cleanInput === 'admin@bongshop.com' || cleanInput === 'admin@minishop.com') && pass === 'admin') {
       const masterAdmin: User = {
         id: 'master-admin-id',
-        email: 'admin@minishop.com',
-        fullname: 'Chủ Cửa Hàng Mini Shop',
+        email: 'admin@bongshop.com',
+        fullname: 'Chủ Cửa Hàng Bông Shop',
         role: 'admin',
-        avatar: 'L'
+        avatar: 'B'
       };
       setUser(masterAdmin);
       localStorage.setItem('minishop_user', JSON.stringify(masterAdmin));
