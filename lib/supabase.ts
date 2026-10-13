@@ -2,8 +2,8 @@ import { createClient } from '@supabase/supabase-js';
 import { Product, Order, User } from './types';
 import { INITIAL_PRODUCTS_DATA, formatCurrencyVND } from './products-data';
 
-const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || 'https://lnwltbvlifrhyrpwtmmf.supabase.co';
-const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || 'sb_publishable_nkefygNGjpLMtEsPv127jQ_yJakszuM';
+const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || 'https://nihsxqvdpqlhxnwyilzv.supabase.co';
+const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im5paHN4cXZkcHFsaHhud3lpbHp2Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTE4NjgxNDAsImV4cCI6MjEwNzQ0NDE0MH0.0GRsyyWRjMOW0emq_x5ZZmpZAybga3JyIGIH6E5jLq0';
 
 export const supabase = createClient(supabaseUrl, supabaseAnonKey);
 
